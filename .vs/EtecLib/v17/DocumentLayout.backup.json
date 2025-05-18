@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5D125D0-8DF9-45BD-8042-06909FA13A06}|DLL-Project\\DLL-Project.csproj|c:\\users\\andre\\source\\repos\\eteclib\\dll-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5D125D0-8DF9-45BD-8042-06909FA13A06}|DLL-Project\\DLL-Project.csproj|solutionrelative:dll-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5D125D0-8DF9-45BD-8042-06909FA13A06}|DLL-Project\\DLL-Project.csproj|c:\\users\\andre\\source\\repos\\eteclib\\dll-project\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5D125D0-8DF9-45BD-8042-06909FA13A06}|DLL-Project\\DLL-Project.csproj|solutionrelative:dll-project\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,30 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Aluno.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\source\\repos\\EtecLib\\DLL-Project\\Aluno.cs",
-              "RelativeDocumentMoniker": "DLL-Project\\Aluno.cs",
-              "ToolTip": "C:\\Users\\Andre\\source\\repos\\EtecLib\\DLL-Project\\Aluno.cs",
-              "RelativeToolTip": "DLL-Project\\Aluno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T08:57:09.129Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Pessoa.cs",
               "DocumentMoniker": "C:\\Users\\Andre\\source\\repos\\EtecLib\\EtecLib\\Pessoa.cs",
               "RelativeDocumentMoniker": "EtecLib\\Pessoa.cs",
-              "ToolTip": "C:\\Users\\Andre\\source\\repos\\EtecLib\\EtecLib\\Pessoa.cs*",
-              "RelativeToolTip": "EtecLib\\Pessoa.cs*",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAQwEoAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Andre\\source\\repos\\EtecLib\\EtecLib\\Pessoa.cs",
+              "RelativeToolTip": "EtecLib\\Pessoa.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwGYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T03:15:48.498Z",
               "EditorCaption": ""
@@ -58,7 +41,7 @@
               "RelativeDocumentMoniker": "DLL-Project\\Program.cs",
               "ToolTip": "C:\\Users\\Andre\\source\\repos\\EtecLib\\DLL-Project\\Program.cs",
               "RelativeToolTip": "DLL-Project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T08:55:02.592Z",
               "EditorCaption": ""
