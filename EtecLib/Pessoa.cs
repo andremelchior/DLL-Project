@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
-namespace EtecLib
+namespace Etec.Lib
 {
     public abstract class Pessoa
     {
@@ -45,10 +46,10 @@ namespace EtecLib
             } 
         }
 
-        protected int Cpf { get; set; }
+        protected long Cpf { get; set; }
 
         private double peso;
-        protected double Peso
+        public double Peso
         {
             get
             {
@@ -56,19 +57,12 @@ namespace EtecLib
             }
             set
             {
-                if (!value.Equals(null))
-                {
-                    peso = value;
-                }
-                else
-                {
-                    Console.WriteLine("Peso inválido!");
-                }
+                peso = value;
             }
         }
 
         private double altura;
-        protected double Altura
+        public double Altura
         {
             get
             {
@@ -76,42 +70,35 @@ namespace EtecLib
             }
             set
             {
-                if (!value.Equals(null))
-                {
-                    altura = value;
-                }
-                else
-                {
-                    Console.WriteLine("Altura inválido!");
-                }
+                altura = value;
             }
         }
 
-        protected virtual void cadastrar()
+        public virtual void cadastrar()
         {
             Console.WriteLine("Digite o nome: ");
             this.Nome = Console.ReadLine();
             Console.WriteLine("Digite a idade: ");
             this.Idade = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o CPF: ");
-            this.Cpf = int.Parse(Console.ReadLine());
+            this.Cpf = long.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o peso: ");
-            this.Peso = double.Parse(Console.ReadLine()); 
+            this.Peso = double.Parse(Console.ReadLine().Replace(',', '.'), CultureInfo.InvariantCulture); 
             Console.WriteLine("Digite a altura: ");
-            this.Altura = double.Parse(Console.ReadLine());
+            this.Altura = double.Parse(Console.ReadLine().Replace(',', '.'), CultureInfo.InvariantCulture);
         }
 
-        protected abstract void exibir();
+        public abstract void exibir();
 
-        protected double calcularIMC(double peso, double altura)
+        public double calcularIMC(double peso, double altura)
         {
             return peso / Math.Pow(altura, 2);
         }
 
-        protected void statusIMC(double imc)
+        public void statusIMC(double imc)
         {
-            Console.WriteLine($"O seu IMC é: {imc}");
+            Console.WriteLine($"IMC atual: {imc}");
 
             if (imc < 18.5)
             {

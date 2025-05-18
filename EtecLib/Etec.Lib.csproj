@@ -7,8 +7,8 @@
     <ProjectGuid>{5CA9DE78-365B-4540-8326-52812D1AEEEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EtecLib</RootNamespace>
-    <AssemblyName>EtecLib</AssemblyName>
+    <RootNamespace>Etec.Lib</RootNamespace>
+    <AssemblyName>Etec.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

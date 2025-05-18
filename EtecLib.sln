@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtecLib", "EtecLib\EtecLib.csproj", "{5CA9DE78-365B-4540-8326-52812D1AEEEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etec.Lib", "EtecLib\Etec.Lib.csproj", "{5CA9DE78-365B-4540-8326-52812D1AEEEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL-Project", "DLL-Project\DLL-Project.csproj", "{D5D125D0-8DF9-45BD-8042-06909FA13A06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5CA9DE78-365B-4540-8326-52812D1AEEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CA9DE78-365B-4540-8326-52812D1AEEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CA9DE78-365B-4540-8326-52812D1AEEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D125D0-8DF9-45BD-8042-06909FA13A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D125D0-8DF9-45BD-8042-06909FA13A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D125D0-8DF9-45BD-8042-06909FA13A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D125D0-8DF9-45BD-8042-06909FA13A06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
