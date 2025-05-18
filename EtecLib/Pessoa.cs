@@ -8,8 +8,8 @@ namespace EtecLib
 {
     public abstract class Pessoa
     {
-        protected string nome;
-        public string Nome
+        private string nome;
+        protected string Nome
         {
             get
             {
@@ -32,8 +32,8 @@ namespace EtecLib
             }
         }
 
-        protected int idade;
-        public int Idade
+        private int idade;
+        protected int Idade
         { 
             get 
             { 
@@ -45,10 +45,10 @@ namespace EtecLib
             } 
         }
 
-        public int Cpf { get; set; }
+        protected int Cpf { get; set; }
 
-        protected double peso;
-        public double Peso
+        private double peso;
+        protected double Peso
         {
             get
             {
@@ -67,8 +67,8 @@ namespace EtecLib
             }
         }
 
-        protected double altura;
-        public double Altura
+        private double altura;
+        protected double Altura
         {
             get
             {
@@ -86,5 +86,54 @@ namespace EtecLib
                 }
             }
         }
+
+        protected virtual void cadastrar()
+        {
+            Console.WriteLine("Digite o nome: ");
+            this.Nome = Console.ReadLine();
+            Console.WriteLine("Digite a idade: ");
+            this.Idade = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o CPF: ");
+            this.Cpf = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o peso: ");
+            this.Peso = double.Parse(Console.ReadLine()); 
+            Console.WriteLine("Digite a altura: ");
+            this.Altura = double.Parse(Console.ReadLine());
+        }
+
+        protected abstract void exibir();
+
+        protected double calcularIMC(double peso, double altura)
+        {
+            return peso / Math.Pow(altura, 2);
+        }
+
+        protected void statusIMC(double imc)
+        {
+            Console.WriteLine($"O seu IMC é: {imc}");
+
+            if (imc < 18.5)
+            {
+                Console.WriteLine("Status IMC: Magro");
+            }
+            else if (imc >= 18.5 && imc <= 24.9)
+            {
+                Console.WriteLine("Status IMC: Normal");
+            }
+            else if (imc >= 25 && imc <= 29.9)
+            {
+                Console.WriteLine("Status IMC: Sobrepeso");
+            }
+            else if (imc >= 30 && imc <= 39.9)
+            {
+                Console.WriteLine("Status IMC: Obesidade");
+            }
+            else
+            {
+                Console.WriteLine("Status IMC: Obesidade Grave");
+            }
+        }
+
     }
 }
